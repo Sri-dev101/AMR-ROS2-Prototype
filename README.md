@@ -47,8 +47,15 @@ This project focuses on designing a mobile robot from the ground up, capable of 
 
 ## 📂 Repository Structure
 * **/src**: ROS2 packages and Python nodes for robot logic.
-* **/hardware**: Autodesk Inventor (.ipt, .iam) models and circuit schematics.
+* **/hardware_cad**: Autodesk Inventor (.ipt, .iam) models and circuit schematics.
 * **.gitignore**: Configured to exclude build, install, and log artifacts.
 
 ## 📈 Learning Goals
-My primary motivation is to utilize hands-on learning to understand robotics from the ground up. By building this robot from scratch—designing hardware, wiring electronics, and writing code—I am mastering the foundational gears of autonomous systems.
+My primary motivation is to utilize hands-on learning to understand robotics from the ground up. By building this robot from scratch-designing hardware, wiring electronics, and writing code - I am mastering the foundational gears of autonomous systems.
+
+## 🙏 Acknowledgments
+Special thanks to the following individuals for their technical guidance:
+
+* **[Prof.Sreedhar Madichetty](https://www.linkedin.com/in/sreedhar-madichetty-71b6195a/)**: For project oversight and academic mentorship.
+* **[R V S Srikasyap Sagar](https://www.linkedin.com/in/r-v-s-srikasyap-sagar/)**: For coordinating mechatronics and software integration.
+* **[Arvind Prabhu](https://www.linkedin.com/in/arvind-prabhu-50411031b/)**: For providing expert mentorship in **Autodesk Inventor** and mechanical architecture optimization.
