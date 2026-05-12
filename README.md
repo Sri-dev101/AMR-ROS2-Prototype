@@ -2,35 +2,54 @@
 
 This project is the development of an **Autonomous Mobile Robot (AMR)** prototype, serving as a foundational step toward mastering the systems engineering required for humanoid robotics.
 
+**Project Mentor:** Prof. Sreedhar Madichetty (ECM Dept.)
+
+**Student Mentor:** R V S Srikasyap Sagar (3rd yr, Mechatronics Dept.)
+
 ## 🤖 System Overview
-- **Middleware:** ROS2 (Humble/Jazzy).
-- **Hardware Control:** Integrated **Arduino** for low-level motor actuation and sensor data processing.
-- **Mechanical Design:** Chassis and component mounts designed in **Autodesk Inventor**.
+This project focuses on designing a mobile robot from the ground up, capable of carrying a **maximum payload of 20kg** from point A to point B autonomously. The objective is to move beyond theoretical study and gain real-world experience with ROS2, microcontrollers, and microprocessors.
 
-## 📂 Repository Structure
-- **/src**: Contains ROS2 packages for motor control, sensor fusion, and node communication.
-- **.gitignore**: Configured to exclude build artifacts (`build/`, `install/`, `log/`), ensuring a clean source-only repository.
-
-## 🚀 Current Status
-- [x] Initial ROS2 node architecture completed.
-- [x] Mechanical chassis design finalized in CAD.
-- [ ] Physical fabrication and assembly. (In Progress)
-- [ ] SLAM and Navigation stack integration. (Planned)
-
-## 📈 Learning Goals
-This project is an independent exercise in moving from "blindly following" tutorials to **Architecting Systems**. It focuses on mastering the foundational gears of robotics: message passing, hardware-software interfaces, and mechanical integrity.
-
-**Project Mentor:** Prof. Sreedhar Madichetty (Mahindra University) 
-**End Goal:** Design a mobile robot capable of autonomously carrying a **20kg payload**.
-
-## 🛠️ Hardware Stack (Stages 1-4) 
-- **Actuation:** 12V Planetary Gear DC Motors (72.5 N-cm, 185RPM) with encoders.
-- **Processing:** Raspberry Pi 4 Model B (High-level) and Arduino MEGA2560 (Low-level).
-- **Sensing:** SLAMTEC RPLIDAR A1M8 (360° Laser Range Finder) and HC-SR04 Ultrasonic Sensors.
-- **Power:** 3S LiPo Battery (11.1V, 2200mAh) with Buck Converters for voltage regulation.
+## 🛠️ Hardware Stack
+* **Actuation:** 12V Planetary Gear DC Motors (x4) with encoders (72.5 N-cm, 185RPM).
+* **Motor Control:** BTS7960 Motor Drivers (x2) and Arduino MEGA2560.
+* **Processing:** Raspberry Pi 4 Model B.
+* **Sensing:** SLAMTEC RPLIDAR A1M8 (360° Laser Range Finder) and HC-SR04 Ultrasonic Sensors.
+* **Weight Sensing:** Load Cells (x4, 50kg) with HX711 24-Bit Amplifiers.
+* **Power:** 3S Lithium Polymer (LiPo) Battery (11.1V, 2200mAh) with LM2596S DC-DC Buck Converter.
 
 ## 💻 Software & Middleware
-- **OS:** Ubuntu 22.04 LTS & Windows 11.
-- **Middleware:** ROS2 Humble with Nav2 Stack and SLAM Toolbox.
-- **Simulation:** Gazebo and RViz2 for visualization.
-- **Design:** Autodesk Inventor for mechanical architecture.
+* **Operating Systems:** Ubuntu 22.04 LTS and Windows 11.
+* **Middleware:** ROS2 Humble with Nav2 Stack and SLAM Toolbox.
+* **Firmware:** Arduino IDE and Micro-ROS.
+* **Design Tools:** Autodesk Inventor, Cirkit designer IDE, and Tinkercad.
+* **Simulation:** Gazebo and RViz2.
+
+## 🗺️ Roadmap
+
+### Stage 1: The Hardware MVP
+* Comprehensive circuit and mechanical design.
+* Chassis fabrication, assembly, and wiring.
+* Initial system integration and low-level programming.
+
+### Stage 2: The Digital Twin
+* Spatial frame architecture and kinematic modeling.
+* Dynamic state broadcasting and parametric model optimization.
+* Physics engine integration for simulation accuracy.
+
+### Stage 3: The Brain Transplant
+* Microcomputer (Raspberry Pi) environment provisioning.
+* Serial UART bridge implementation and kinematic odometry publishing.
+* Velocity command subscription and closed-loop teleoperation validation.
+
+### Stage 4: Autonomy & Perception
+* Probabilistic SLAM and Map Generation.
+* Custom environment simulation and fine-tuning.
+* Autonomous path planning validation and hardware Nav2 integration.
+
+## 📂 Repository Structure
+* **/src**: ROS2 packages and Python nodes for robot logic.
+* **/hardware**: Autodesk Inventor (.ipt, .iam) models and circuit schematics.
+* **.gitignore**: Configured to exclude build, install, and log artifacts.
+
+## 📈 Learning Goals
+My primary motivation is to utilize hands-on learning to understand robotics from the ground up. By building this robot from scratch—designing hardware, wiring electronics, and writing code—I am mastering the foundational gears of autonomous systems.
