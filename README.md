@@ -2,9 +2,8 @@
 
 This project is the development of an **Autonomous Mobile Robot (AMR)** prototype, serving as a foundational step toward mastering the systems engineering required for humanoid robotics.
 
-**Project Mentor:** Prof. Sreedhar Madichetty (ECM Dept.)
-
-**Student Mentor:** R V S Srikasyap Sagar (3rd yr, Mechatronics Dept.)
+**Project Mentor:** [Prof. Sreedhar Madichetty](https://www.linkedin.com/in/sreedhar-madichetty-71b6195a/)  
+**Student Mentor:** [R V S Srikasyap Sagar](https://www.linkedin.com/in/r-v-s-srikasyap-sagar/)
 
 ## 🤖 System Overview
 This project focuses on designing a mobile robot from the ground up, capable of carrying a **maximum payload of 20kg** from point A to point B autonomously. The objective is to move beyond theoretical study and gain real-world experience with ROS2, microcontrollers, and microprocessors.
